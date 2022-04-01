@@ -5,10 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caesar+Dressing&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
-    <div class="main">Ciao</div>
-    Hello world
+    <main>
+      <div class="image-container">
+        <div class="logo-container">
+          <img alt="odin-logo" src="./assets/odin-lined.png" class="logo" />
+          <h1 class="title">Odin</h1>
+        </div>
+      </div>
+      <section class="form-section">
+        <div class="heading-text">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realise your deepest dreams.
+          </p>
+          <p>Sign up now to get started.</p>
+          <br />
+          <p>You know you want to.</p>
+        </div>
+        <form action="" class="signup-form">
+          <div class="form-container">
+            <p class="form-title">Let's do this!</p>
+            <div class="input">
+              <label for="first-name">First name</label>
+              <input type="text" id="first-name" name="first-name" />
+            </div>
+
+            <div class="input">
+              <label for="last-name">Last name</label>
+              <input type="text" id="last-name" name="last-name" />
+            </div>
+            <div class="input">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div class="input">
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+            <div class="input">
+              <label for="password">Password</label>
+              <input
+                class="error"
+                required
+                type="password"
+                id="password"
+                name="password"
+              />
+              <p class="error-text">*Passwords do not match</p>
+            </div>
+
+            <div class="input">
+              <label for="confirm-password">Confirm password</label>
+              <input
+                required
+                class="error"
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+              />
+            </div>
+          </div>
+          <div class="btn-container">
+            <button type="submit" class="btn">Create Account</button>
+            <p class="account-text">
+              Already have an account? <a href="">Log in</a>
+            </p>
+          </div>
+        </form>
+      </section>
+    </main>
   </body>
 </html>
